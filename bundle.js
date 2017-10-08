@@ -1,6 +1,6 @@
 /**
- * If you are curious you can see the source at
- * https://github.com/peterhudec/peterhudec.com
+ * If you are curious you can see the source at:
+ * https://github.com/peterhudec/peterhudec
  */
 var $jscomp={scope:{}};$jscomp.defineProperty="function"==typeof Object.defineProperties?Object.defineProperty:function(y,h,l){if(l.get||l.set)throw new TypeError("ES3 does not support getters and setters.");y!=Array.prototype&&y!=Object.prototype&&(y[h]=l.value)};$jscomp.getGlobal=function(y){return"undefined"!=typeof window&&window===y?y:"undefined"!=typeof global&&null!=global?global:y};$jscomp.global=$jscomp.getGlobal(this);
 $jscomp.polyfill=function(y,h,l,r){if(h){l=$jscomp.global;y=y.split(".");for(r=0;r<y.length-1;r++){var B=y[r];B in l||(l[B]={});l=l[B]}y=y[y.length-1];r=l[y];h=h(r);h!=r&&null!=h&&$jscomp.defineProperty(l,y,{configurable:!0,writable:!0,value:h})}};$jscomp.polyfill("Number.EPSILON",function(y){return Math.pow(2,-52)},"es6-impl","es3");$jscomp.polyfill("Math.sign",function(y){return y?y:function(h){h=Number(h);return 0===h||isNaN(h)?h:0<h?1:-1}},"es6-impl","es3");
